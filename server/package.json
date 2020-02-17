@@ -1,0 +1,19 @@
+{
+  "name": "wabler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rukmann",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "node-pre-gyp": "^0.14.0",
+    "nodemon": "^1.19.1"
+  }
+}
