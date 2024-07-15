@@ -1,4 +1,5 @@
-require('dotenv').load()
+require("dotenv").config();
+
 const jwt = require('jsonwebtoken')
 
 exports.loginRequired = function(req, res, next){
@@ -31,7 +32,6 @@ exports.loginRequired = function(req, res, next){
 
 exports.ensureCorrectUser = function(req, res, nex){
 
-    
     try{
 
         const token = req.headers.authorization.split(' ')[1]
@@ -48,7 +48,6 @@ exports.ensureCorrectUser = function(req, res, nex){
             }
         })
         
-
 
     }catch(err){
         return next({
